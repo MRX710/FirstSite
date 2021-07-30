@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Template1</title>
+	<link rel="stylesheet" href="./css/normalise.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<script src="../node_modules/lazysizes-5.3.1/lazysizes.min.js"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.4.0/dist/lazyload.min.js"></script> -->
+	<!-- <script  type="text/javascript" src="js/lazyLoad.js"></script> -->
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header container-header" id="header"> <!-- burger-active__header -->
+			<div class="header__body">
+				<div class="header__burger " id="burger"><!-- burger-active -->
+					<!-- <div><span></span></div> -->
+					<button class="header__burger-button"  type="button" href="#burger" id="burder-a"></button>
+				</div>
+				<nav class="header__menu "> <!-- burger-active__menu -->
+					<ul>
+						<li><a onclick="javascript: (clickRef)()" href="#home">Home</a></li>		
+						<li><a onclick="javascript: (clickRef)()" href="#aboutMe">About me</a></li>
+						<li><a onclick="javascript: (clickRef)()" href="#skills">Skills</a></li>
+						<li><a onclick="javascript: (clickRef)()" href="#porfolio">Portfolio</a></li>
+						<li><a onclick="javascript: (clickRef)()" href="#contacts">Contacts</a></li>	
+					</ul>
+				</nav>	
+			</div>
+		</header>
+		<section class="introduce container" id="home">
+			<div class="content content-introduce">
+				<div class="introduce__content">
+					<div class="introduce__fullName">
+						<span class>Some - One</span>
+ 					</div>
+					<div class="introduce__job">
+						<span>WebDesigner /</span>
+						<span>WebDeveloper</span>	
+					</div>
+					<div class="introduce__container-img">
+						<div class="introduce__content-img"><img src="img/label_language.svg" alt="#" class="introduce__img"></div>
+					</div>
+				</div>	
+			</div>
+		</section>
+		<section class="photo container">
+			<div class="photo__container">
+				<picture>
+					<source srcset="img/a_Man_little.png" media="(max-width:768px)" class="photo__img">
+					<img src="img/a_Man__big.png" alt="photoAbout" class="photo__img">
+				</picture>
+			</div>
+		</section>
+		<section class="aboutMe" id="aboutMe">
+			<div class="container">
+				<div class="aboutMe__container">
+					<span id="about_me">About me</span>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, enim quia at ullam officiis  deleniti corporis voluptatem dicta magnam sunt! Voluptas, similique assumenda excepturi quidem ipsum nobis, unde nisi cumque ullamdolor facere totam?</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, enim quia at ullam officiis  deleniti corporis voluptatem dicta magnam sunt! Voluptas, similique assumenda excepturi quidem ipsum nobis, unde nisi cumque ullamdolor facere totam?</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, enim quia at ullam officiis  deleniti corporis voluptatem dicta magnam sunt! Voluptas, similique assumenda excepturi quidem ipsum nobis, unde nisi cumque ullamdolor facere totam?</p>				
+				</div>
+			</div>
+		</section>
+		<section class="mySkills container" id="skills">
+			<div class="mySkills__container content">
+				<span class="mySkills__title">Skills</span>
+				<span class="mySkills__title-description">I work in such programs as</span>
+				<div class="mySkills__items">
+					<ul class="mySkills__items-ul">
+						<li class="mySkills__item"><div class="mySkills__item-container"><img src="img/defaultImg_166px.png" data-src="img/photoshop.png" alt="mySkill" class="lazyload"></div></li>
+						<li class="mySkills__item"><div class="mySkills__item-container"><img src="img/defaultImg_166px.png" data-src="img/ilustrator.png" alt="mySkill" class="lazyload"></div></li>
+						<li class="mySkills__item"><div class="mySkills__item-container"><img src="img/defaultImg_166px.png" data-src="img/adobe_effects.png" alt="mySkill" class="lazyload"></div></li>
+						<li class="mySkills__item"><div class="mySkills__item-container"><img src="img/defaultImg_166px.png" data-src="img/figma.png" alt="mySkill" class="lazyload"></div></li>
+					</ul>	
+				</div>
+			</div>
+		</section>
+		<section class="portfolio container" id="porfolio">
+			<div class="portfolio__container">
+				<div class="portfolio__span-container">
+					<span class="portfolio__span">Porfolio</span>
+				</div>
+				<div class="portfolio__img-container">
+					<picture>
+						<source srcset="img/defaultImg_261px(myWorks__first-picture).png" data-srcset="img/Portfolio_Desktop_1part-smaller.png" media="(max-width:768px)" class="lazyload forImg portfolio__img-div1">
+						<img src="img/defaultImg_937px(myWorks__first-picture__desktop).png" data-src="img/Portfolio_Desktop.png" alt="portfolio" class="lazyload forImg portfolio__img-div1">	
+					</picture>
+				</div>
+				<div class="portfolio__img-container" id="portfolio__img-container_2">
+					<img src="img/defaultImg_582px(myWorks__pairFirst-picture__desktop).png" data-src="img/Portfolio_Desktop_part2-3.png" alt="porfolio" class="lazyload forImg portfolio__img-div2">
+					<!-- <img src="img/Portfolio_Desktop_part2-3.png" alt="porfolio" class="forImg portfolio__img-div2"> -->
+				</div>
+			</div>
+		</section>
+		<section class="contacts container" id="contacts">
+			<div class="contacts__container-forMargin">
+				<div class="contacts__container-flex">
+					<div class="contacts__span-container">
+						<span class="contacts__span">Contacts</span>
+					</div>
+					<div class="contacts__text-container">
+						<span class="contacts__text">Want to know more or just chat? <br> You are welcome!</span>
+					</div>
+					<button class="contacts__send-message" onclick="javascript:(() => { alert('Your message has been sent!'); }) () ">Send message</button>
+					<div class="contacts__labels-outContainer">
+						<ul class="contacts__labels">
+							<li class="contacts__label-item">
+								<div class="img contacts__label-item__img-container"><img src="img/social-media__in.svg" alt="contacts-social-media" class="contacts__label-item__img forImg"></div>
+							</li>
+							<li class="contacts__label-item">
+								<div class="img contacts__label-item__img-container"><img src="img/social-media__instagram.svg" alt="contacts-social-media" class="contacts__label-item__img "></div>
+							</li>
+							<li class="contacts__label-item">
+								<div class="img contacts__label-item__img-container"><img src="img/social-media__Be.svg" alt="contacts-social-media" class="contacts__label-item__img forImg"></div>
+							</li>
+							<li class="contacts__label-item">
+								<div class="img contacts__label-item__img-container"><img src="img/social-media__ball.svg" alt="contacts-social-media" class="contacts__label-item__img forImg"></div>
+							</li>
+						</ul>	
+					</div>
+					<div class="contacts__data"><p>Like me on<br>LinkedIn, Instagram, Behance, Dribble</p></div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<script src="js/index.js"></script>
+</body>
+</html>
+
+
+
+
+
+<!-- <div class="container">
+	<ul class="container__list">
+		<li class="container__list-item">
+			
+		</li>
+	</ul>
+</div> -->
